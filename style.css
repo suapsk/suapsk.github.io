@@ -1,0 +1,55 @@
+body {
+	background: #212121;
+}
+.ubuntu {
+	text-align: center;
+	position: relative;
+}
+#top-space {
+	height: 20px;
+}
+#text-1 {
+	text-align: center;
+	font-family: Arial, Helvetica, monospace;
+	font-size: 36px;
+	color: #d5d1cc;
+}
+#text-2 {
+	text-align: center;
+	font-family: Arial, Helvetica ,monospace;
+	font-size: 18px;
+	color: #9d9588;
+}
+.ubuntu-img {
+	height: 176px;
+	width: 176px;
+}
+.rect-container {
+	text-align: center;
+}
+#line {
+	background-color: #fff;
+	width: 100%;
+}
+.ipcheck-container {
+	color: #383838;
+	font-size: 14px;
+	font-family: Arial, Helvetica, monospace;
+	text-align: center;
+}
+#ipcheck {
+	border: none;
+	font-family: Arial;
+	text-align: center;
+	height: 70px;
+}
+#bottom-space {
+	height: 280px;
+}
+header {
+	background-color: #1e1e1e;
+}
+
+.ipcheck-container {
+    text-align: center;
+}
