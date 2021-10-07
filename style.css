@@ -36,25 +36,9 @@ hr {
 	background-color: #fff;
 	width: 100%;
 }
-.ipcheck-container {
-	color: #383838;
-	font-size: 14px;
-	font-family: Arial, Helvetica, monospace;
-	text-align: center;
-}
-#ipcheck {
-	border: none;
-	font-family: Arial;
-	text-align: center;
-	height: 70px;
-}
 #bottom-space {
 	height: 280px;
 }
 header {
 	background-color: #1e1e1e;
-}
-
-.ipcheck-container {
-    text-align: center;
 }
