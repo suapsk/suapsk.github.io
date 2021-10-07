@@ -4,6 +4,7 @@ body {
 hr {
 	background: #d5d1cc;
 	border: 0.1rem solid #d5d1cc;
+	border-radius: 3rem;
 }
 .ubuntu {
 	text-align: center;
