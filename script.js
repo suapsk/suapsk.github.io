@@ -1,5 +1,5 @@
 console.log("Access Denided!");
 
 function imgerror {
-  document.getElementByClass("ubuntu-img").setAttribute("src", "./ubuntu.png")
+  document.getElementByClass("ubuntu-img").setAttribute("src", "./ubuntu.jpg")
 }
