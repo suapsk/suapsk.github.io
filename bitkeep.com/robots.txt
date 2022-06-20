@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BitKeep is the best decentralized multi-chain crypto wallet, providing 40+ main chains and 45000+ crypto assets and 10,000+ DApps to global users."
+    />
+    <meta property="og:title" content="BitKeep: The Best Decentralized Multi-chain Crypto Wallet" />
+    <meta property="og:description" content="BitKeep is the best decentralized multi-chain crypto wallet, providing 40+ main chains and 45000+ crypto assets and 10,000+ DApps to global users." />
+    <meta property="twitter:title" content="BitKeep: The Best Decentralized Multi-chain Crypto Wallet" data-shuvi-head="true">
+    <title>BitKeep: The Best Decentralized Multi-chain Crypto Wallet</title>
+    
+      <meta name="keywords" content="bitkeep,wallet,ethereum,bitcoin,eos,exchange,dapp,imtoken,kcash,cobo,bitkeep钱包,比特币,以太坊,数字钱包,币安,火币,Okex,binance,huobi,okex"/>
+<meta name="google-site-verification" content="mohvtRqx4881-yk3PPB1HGwrE4jNIUehtro0H4E3HVw"/>
+<meta name="robots" content="all" >
+<meta property="og:url" content="https://bitkeep.com" data-shuvi-head="true">
+<meta property="og:type" content="website" />
+<meta property="og:image:alt" content="BitKeep, a Best Crpto Wallet" />
+<meta property="og:site_name" content="BitKeep">
+<meta property="twitter:card" content="summary_large_image" data-shuvi-head="true">
+<meta property="twitter:site" content="BitKeep" data-shuvi-head="true">
+
+    <link rel="shortcut icon" href="https://cdn.bitkeep.vip/u_b_69b66a00-a046-11ec-a3eb-f758fa002ae8.png" />
+    <meta property="twitter:image" content="https://cdn.bitkeep.vip/u_b_26e281b0-a509-11ec-a3eb-f758fa002ae8.png" data-shuvi-head="true"/>
+    <meta property="twitter:image:src" content="https://cdn.bitkeep.vip/u_b_26e281b0-a509-11ec-a3eb-f758fa002ae8.png" data-shuvi-head="true"/>
+    <meta property="og:image" content="https://cdn.bitkeep.vip/u_b_26e281b0-a509-11ec-a3eb-f758fa002ae8.png" />
+
+<style>
+  body,
+  div,
+  ul,
+  ol,
+  dt,
+  dd,
+  dl,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  form,
+  input,
+  select,
+  textarea,
+  p,
+  img,
+  a,
+  span,
+  strong,
+  * {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: PingFang SC, microsoft yahei;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-family: InterMediumH5 !important;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  img,
+  input,
+  select,
+  textarea {
+    vertical-align: middle;
+  }
+  img {
+    border: none;
+  }
+  p,
+  li,
+  a,
+  span {
+    font-weight: 400;
+  }
+  a {
+    text-decoration: none;
+  }
+  .clear {
+    clear: both;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  .light {
+    min-height: 500px;
+  }
+  .contbox {
+    position: relative;
+    max-width: 1500px;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 1000px) {
+    html {
+      font-size: 75%;
+    }
+    .contbox {
+      max-width: 900px;
+    }
+  }
+  @media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    html {
+      font-size: 77.5%;
+    }
+    .contbox {
+      max-width: 950px;
+    }
+  }
+  @media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    html {
+      font-size: 80%;
+    }
+    .contbox {
+      max-width: 1000px;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    html {
+      font-size: 82.5%;
+    }
+    .contbox {
+      max-width: 1000px;
+    }
+  }
+  @media only screen and (min-width: 1300px) and (max-width: 1400px) {
+    html {
+      font-size: 85%;
+    }
+    .contbox {
+      max-width: 1100px;
+    }
+  }
+  @media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    html {
+      font-size: 87.5%;
+    }
+    .contbox {
+      max-width: 1200px;
+    }
+  }
+  @media only screen and (min-width: 1500px) and (max-width: 1600px) {
+    html {
+      font-size: 90%;
+    }
+    .contbox {
+      max-width: 1300px;
+    }
+  }
+  @media only screen and (min-width: 1700px) {
+    html {
+      font-size: 95%;
+    }
+    .contbox {
+      max-width: 1500px;
+    }
+  }
+  .headerBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 5rem;
+    width: 100%;
+    transition: all .5s linear;
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.headerBar-box {
+    box-sizing: border-box;
+    height: 5rem;
+    padding: 0.9rem 0 0;
+    margin: 0 20px;
+}
+
+.headerBar-box .logo {
+    /* width: 8rem; */
+    height: 3rem;
+    margin-top: 0.5rem;
+    float: left;
+}
+.headerBar-box .logo img {
+        /* display: block; */
+        width: 125px;
+        height: 40px;
+    }
+.headerBar-box .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.headerBar-box .theme_img{
+    width: 1.7rem;
+    height: 1.7rem;
+    vertical-align: middle;
+    position: relative;
+    float: right;
+    top: 1.1rem;
+    /* right: 9.5rem; */
+    cursor: pointer;
+}
+.headerBar-box .list {
+    /* float: right; */
+    margin: 13px 4.5rem 0 0;
+    font-size: 16px;
+    display: flex;
+    padding-left: 52px;
+}
+.headerBar-box .list .item {
+    position: relative;
+    height: 100%;
+    margin-left: 40px;
+    float: left;
+}
+.headerBar-box .list .item:nth-child(1){
+    margin-left: 0;
+}
+.headerBar-box .cur {
+    width: 100%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+}
+.headerBar-box .cur p {
+    float: left;
+    cursor: pointer;
+}
+.headerBar-box .cur span.jian {
+    display: block;
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: .7rem;
+    margin-left: .3rem;
+    background-size: 100% auto;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    /* background: url(https://cdn.bitkeep.vip/u_b_00aa7b10-da7a-11eb-bd2f-03aa2946fb23.png) no-repeat; */
+    background-size: 100% auto;
+}
+.headerBar-box .more {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    top: 2.1rem;
+    left: -5rem;
+    width: 12.5rem;
+    border-radius: .5rem;
+    /* background: #fff; */
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.08);
+    line-height: 3.5rem;
+    text-align: center;
+}
+.dark .headerBar-box .more{
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.8);
+}
+.headerBar-box .active {
+    display: block;
+    position: relative;
+    float: left;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    padding: 0 1rem 0 2.5rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-top: .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.headerBar-box .active span {
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(https://cdn.bitkeep.vip/u_b_dbdd1810-da79-11eb-bd2f-03aa2946fb23.png) no-repeat;
+    background-size: 100% auto;
+    left: .5rem;
+    top: .46rem
+}
+.light .headerBar-box .more li:hover {
+    background: #F8F8F9;
+}
+.dark .headerBar-box .more li:hover{
+    background: #202024;
+}
+.headerBar-box .more a {
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    /* color: #0E1B40; */
+}
+.headerBar-box .list .item:hover .more {
+    display: block;
+}
+.headerBar-box .list .item:hover span.jian {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.headerBar-box .btn {
+    float: right;
+    width: 6.8rem;
+    height: 2.3rem;
+    margin: 0.7rem 2rem 0 0;
+    background: #7524F9;
+    border-radius: 3rem;
+    text-align: center;
+    line-height: 2.3rem;
+    color: #fff;
+    font-size: 1rem;
+    text-indent: 0.25rem;
+    cursor: pointer;
+}
+.headerBar-box .btn:hover {
+    background: #4253e7;
+}
+.headerBar-box .language {
+    position: relative;
+    float: right;
+    /* width: 6.6rem; */
+    height: 2.8rem;
+    /* margin-right: 1rem; */
+    margin-top: .6rem;
+    line-height: 2.8rem;
+}
+.headerBar-box .language::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: .65rem;
+    left: -2.3rem;
+    width: 1px;
+    height: 1.25rem;
+    /* background: rgba(14, 27, 64, 0.1); */
+}
+.headerBar-box .language:hover .language-list {
+    display: block;
+}
+.headerBar-box .language-list {
+    display: none;
+    overflow: hidden;
+    width: 12.5rem;
+    margin-left: -3.9rem;
+    line-height: 3.5rem;
+    position: absolute;
+    /* background: #fff; */
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.08);;   
+}
+.dark .headerBar-box .language-list{
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.8);
+}
+.headerBar-box .language-list ul li {
+    cursor: pointer;
+    font-size: 16px;
+}
+.headerBar-box .language-list ul li a {
+    display: block;
+    width: 100%;
+}
+.light .headerBar-box .language-list ul li:hover {
+    background: #F8F8F9;
+}
+.dark .headerBar-box .language-list ul li:hover{
+    background: #202024;
+}
+.headerBar-box .language-cur {
+    /* font-family: "GilroyBold"; */
+    font-size: 16px;
+    cursor: pointer;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+.headerBar-box .language-cur p {
+    float: left;
+}
+.headerBar-box .language-cur span {
+    display: block;
+    float: left;
+    width: .5rem;
+    height: .5rem;
+    margin-top: 1.1rem;
+    margin-left: .3rem;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+.headerBar-box .language:hover span {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.headerBar-box .language-cur span img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.downLoad{
+    position: relative;
+    float: right;
+    /* width: 6.6rem; */
+    height: 2.8rem;
+    margin-right: 40px;
+    margin-top: 0.6rem;
+    line-height: 2.8rem;
+    margin-left: 40px;
+    text-align: center;
+}
+.downLoad a{
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.headerBar-box .common_download_btn {
+    float: right;
+    min-width: 137px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #7524F9;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 7px;
+    margin-left: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.dark .headerBar-box .common_download_btn{
+    background: #8A43FF;
+}
+.headerBar-box .common_download_btn  a {
+        display: block;
+        width: 100%;
+        height: 2.5rem;
+        color: #fff;
+        /* font-family: 'GilroyMedium'; */
+    }
+
+.headerBar-box .common_hui_btn {
+    display: none;
+}
+
+.common_hui_btn {
+    float: right;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    /* background: #F8F9FA; */
+    border-radius: .5rem;
+    margin-top: 7px;
+    margin-left: .8rem;
+    padding: 0 .5rem;
+    cursor: pointer;
+    /* color: #9CA5B3; */
+}
+.headerBar-box .theme_img{
+    width: 1.7rem;
+    height: 1.7rem;
+    vertical-align: middle;
+    position: relative;
+    float: right;
+    top: 1.1rem;
+    /* right: 9.5rem; */
+    cursor: pointer;
+}
+.dark .light-theme-img{
+    display: none;
+}
+.light .dark-theme-img{
+    display: none;
+}
+.common_hui_btn  a {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    /* font-family: 'GilroyMedium'; */
+    color: #9CA5B3;
+}
+.headerBar-box .accountBox {
+    text-indent: 1.5rem;
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+}
+.headerBar-box .accountBox::before {
+        content: '';
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(https://cdn.bitkeep.vip/u_b_fd6259f0-4d01-11ec-8d52-d32d225c1553.png) no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        left: 0;
+        top: 11px;
+    }
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 30rem;
+    background: #0e0e0e;
+}
+.footer-listbox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3rem 0 0 5rem;
+    height: 24rem;
+}
+.footer-listbox .listbox-left {
+    float: left;
+    width: 9.35rem;
+    height: 2.5rem;
+}
+.footer-listbox .listbox-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.footer-listbox .listbox-right {
+    float: right;
+    margin-right: 2rem;
+}
+.footer-listbox .listbox-item {
+    float: left;
+    margin-left: 5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.footer-listbox .listbox-item li {
+    line-height: 3rem;
+}
+.footer-listbox .listbox-item li a {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-family: PingFang SC, microsoft yahei;
+}
+.footer-listbox .listbox-item li .footer_3_tip{
+    background: #7524F9;
+    margin-left: 1rem;
+    border-radius: 100px;
+    padding: 0.3rem 0.526rem;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 0.921rem;
+}
+.footer-listbox .listbox-item li.cur {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+.footer-box .footer-right p {
+    float: left;
+    width: 25rem;
+    margin-left: 5rem;
+    color: rgba(255, 255, 255, .5);
+    font-weight: 300;
+}
+.footer-box .footer-right ul {
+    float: right;
+    margin-right: 4rem;
+    margin-top: -1rem;
+}
+.footer-box .footer-right ul li {
+    position: relative;
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+.footer-box .footer-right ul li span {
+    display: block;
+    width: 1.25rem;
+}
+.footer-box .footer-right ul li img {
+    display: block;
+    width: 1.25rem;
+    height: auto;
+}
+.footer-box .telebox {
+    position: relative;
+}
+.footer-box .teleList {
+    display: none;
+    position: absolute;
+    left: -3.55rem;
+    top: -5.5rem;
+    width: 8rem;
+    padding: .5rem 0;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.footer-box .teleList::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 3.8rem;
+    bottom: -.8rem;
+    width: 0;
+    height: 0;
+    border: .4rem solid transparent;
+    border-top: .4rem solid #fff;
+}
+.footer-box .teleList a {
+    display: block;
+    height: 2.5rem;
+}
+.animate__animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;   
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    60% {
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.animate__bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.show {
+    display: block !important;
+}
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-size: 2.7rem;
+    /* font-family: "GilroyBold"; */
+}
+
+h2 {
+    font-size: 2.7rem;
+    /* font-family: "GilroyBold"; */
+}
+
+input {
+    display: block;
+    background:none;  
+    outline:none;  
+    border:none;
+    height: 1.5rem;
+    font-size: .9rem;
+}
+input:focus{   
+    border: none;
+}
+input::-webkit-input-placeholder{
+    color:#DADBDE;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#DADBDE;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#DADBDE;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#DADBDE;
+}
+.closeBtn {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: -1rem;
+    top: .25rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(../images/defi/icon_close.png) no-repeat;
+    background-size: 100% auto;
+}
+.WeChatPrompt {
+    width: 7rem;
+    height: 8.3rem;
+    background: #fff;
+}
+.WeChatPrompt img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.WeChatPrompt p {
+    text-align: center;
+    line-height: 1.3rem;
+    margin-top: .5rem;
+}
+
+.light .headerBar-box .jian {
+    display: block;
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    /* margin-top: .7rem; */
+    margin-left: .3rem;
+    background-size: 100% auto;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    background: url(https://cdn.bitkeep.vip/u_b_00aa7b10-da7a-11eb-bd2f-03aa2946fb23.png) no-repeat;
+    background-size: 100% auto;
+}
+.dark .headerBar-box .jian {
+    display: block;
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    /* margin-top: .7rem; */
+    margin-left: .3rem;
+    background-size: 100% auto;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    background: url(https://cdn.bitkeep.vip/u_b_4a478810-e183-11ec-94e6-75110d6edd89.png) no-repeat;
+    background-size: 100% auto;
+}
+.light .headerBar-box .accountBox::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(https://cdn.bitkeep.vip/u_b_67940e00-e649-11ec-949b-c1afd7d562fd.svg+xml) no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+.dark .headerBar-box .accountBox::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: url(https://cdn.bitkeep.vip/u_b_67940e00-e649-11ec-949b-c1afd7d562fd.svg+xml) no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+.light {
+    background: #fff;
+}
+.light .light-icon{
+        display: none;
+    }
+.dark {
+    background: #17171A;
+}
+.dark .dark-icon{
+        display: none;
+    }
+    .right-img{
+    display: none;
+    float: right;
+    margin: 1.3rem 1rem 0 2.5rem;
+    cursor: pointer;
+}
+.right-img img{
+    width: 24px;
+    height: 24px;
+}
+.header-drawer{
+    display: none;
+    width: 256px;
+    /* min-height: 720px; */
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 24px 0;
+}
+.header-drawer .close-img{
+    text-align: right;
+    padding-right: 24px;
+}
+.drawer-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+.header-drawer ul li,.header-drawer ul span,.header-drawer ul p,.header-drawer ul div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 24px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header-drawer ul p a{
+    font-weight: 600;
+}
+.leftDrawImg img{
+    width: 20px!important;
+    height: 20px!important;
+}
+.header-drawer ul li a{
+    font-weight: 600;
+}
+.header-drawer ul img{
+    width: 8px;
+    height: 8px;
+    vertical-align: unset;
+}
+.light .header-drawer ul li:hover{
+    background: #f8f8f9!important;
+}
+.dark .header-drawer ul li:hover{
+    background: #202024!important;
+}
+.smallPage {
+        display: none!important;
+    }
+@media screen and (max-width:1370px) {
+    .listDisplay {
+        display: none!important;
+    }
+    .right-img{
+        display: block!important;
+    }   
+}
+.loginOut{
+    width: 240px;
+    height: 120px;
+    position: absolute;
+    top: 70px;
+    right: 21px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #F2F2F5;
+    display: none;
+}
+.dark .loginOut{
+    border: 1px solid #252529;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.4);
+}
+.loginOut .loginOut_account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 13px 10px;
+    cursor: pointer;
+}
+.loginOut .loginOut_account span{
+    font-weight: 600;
+}
+.loginOut .loginOut_account span img{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.loginOut_account_copy{
+    font-size: 12px;
+}
+.loginOut_account_line{
+    height: 1px;
+}
+.loginOut_account_btn{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #F36464;
+}
+.loginOut_account_btn img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* @media screen and (max-width:750px) {
+    .smallPage {
+        display: block!important;
+    }
+    .smallHeader{
+        display: none!important;
+    }
+} */
+</style>
+
+    
+  <link href="/css/index.52c99.min.css" rel="stylesheet"></head>
+  <body class="light">
+    <div id="box">
+      
+        <div class="message" id="Message"></div>
+<div class="drawer-mask"></div>
+<div id="headerBar" class="headerBar">
+    <input type="hidden" value="zh" id="LangInput">
+    <div class="headerBar-box">
+        <div class="logo" data-val="/"><a title = "BitKeep,  a best crypto wallet">
+            <img src="https://cdn.bitkeep.vip/u_b_33f681d0-e609-11ec-ac7b-676c9b5b9966.png" class="dark-icon" alt="Bitkeep - crypto wallet" />
+            <img src="https://cdn.bitkeep.vip/u_b_51691ca0-e609-11ec-ac7b-676c9b5b9966.png" class="light-icon" alt="Bitkeep - crypto wallet" />
+        </a></div>
+        <div class="right-img">
+            <img class="dark-icon"  src="https://cdn.bitkeep.vip/u_b_3fe81680-e6d5-11ec-8ce4-adb305a5b8dc.png" alt="">
+            <img class="light-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yLjY1MTg2IDQuNDc3NTRDMi42NTE4NiA0LjA4OTIxIDIuOTY2NjYgMy43NzQ0MSAzLjM1NDk4IDMuNzc0NDFIMjAuNjE4MUMyMS4wMDY0IDMuNzc0NDEgMjEuMzIxMiA0LjA4OTIxIDIxLjMyMTIgNC40Nzc1NEMyMS4zMjEyIDQuODY1ODYgMjEuMDA2NCA1LjE4MDY2IDIwLjYxODEgNS4xODA2NkgzLjM1NDk4QzIuOTY2NjYgNS4xODA2NiAyLjY1MTg2IDQuODY1ODYgMi42NTE4NiA0LjQ3NzU0Wk0yLjY1MTg2IDExLjk5QzIuNjUxODYgMTEuNjAxNiAyLjk2NjY2IDExLjI4NjggMy4zNTQ5OCAxMS4yODY4SDIwLjYxODFDMjEuMDA2NCAxMS4yODY4IDIxLjMyMTIgMTEuNjAxNiAyMS4zMjEyIDExLjk5QzIxLjMyMTIgMTIuMzc4MyAyMS4wMDY0IDEyLjY5MzEgMjAuNjE4MSAxMi42OTMxSDMuMzU0OThDMi45NjY2NiAxMi42OTMxIDIuNjUxODYgMTIuMzc4MyAyLjY1MTg2IDExLjk5Wk0zLjM1NDk4IDE4Ljc5OUMyLjk2NjY2IDE4Ljc5OSAyLjY1MTg2IDE5LjExMzggMi42NTE4NiAxOS41MDIyQzIuNjUxODYgMTkuODkwNSAyLjk2NjY2IDIwLjIwNTMgMy4zNTQ5OCAyMC4yMDUzSDIwLjYxODFDMjEuMDA2NCAyMC4yMDUzIDIxLjMyMTIgMTkuODkwNSAyMS4zMjEyIDE5LjUwMjJDMjEuMzIxMiAxOS4xMTM4IDIxLjAwNjQgMTguNzk5IDIwLjYxODEgMTguNzk5SDMuMzU0OThaIiBmaWxsPSIjRTVFNUU1Ii8+Cjwvc3ZnPgo=" alt="">
+        </div>
+        <div class="common_download_btn" id='connectButton'>Connect Wallet</div>
+        <div class="loginOut BG0">
+            <div class="loginOut_account BG1">
+                <span class="text1" id='accountInfo_login'></span>
+                <span class="loginOut_account_copy textSecond3">
+                    <img src="https://cdn.bitkeep.vip/u_b_17979f80-5683-11ec-a2f6-c30da61fc62b.png" alt="">
+                </span>
+            </div>
+            <div class="loginOut_account_line BG1"></div>
+            <div class="loginOut_account_btn">
+                <img src="https://cdn.bitkeep.vip/u_b_03c0b3e0-ed2b-11ec-9a3c-07d0c2ae036d.png" alt="">
+                Disconnect
+            </div>
+        </div>
+        <!-- <div class="common_hui_btn" style="padding: 0 .2rem" id='connectButton'></div> -->
+        <div class="language smallHeader">
+            <div class="language-cur">
+                <p  class="GB text1">English</p>
+                <span class="jian"></span>
+            </div>
+            <div class="language-list">
+                <ul class="BG0 border03">
+                    <li class="langItem" data-val="/zh/index" data="简体中文"><a class="text1">简体中文</a></li>
+                    <li class="langItem" data-val="/" data="English"><a class="text1">English</a></li>
+                    <li class="langItem" data-val="/ko/index" data="한국인"><a class="text1">한국인</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="downLoad oncDownLoad smallHeader" data-val="/download?type=0"><a class="text1">Download</a></div>
+        <img class="theme_img light-theme-img smallHeader" src="https://cdn.bitkeep.vip/u_b_91b67900-e0b5-11ec-97b8-cf86fa2fd6d0.png" alt="">
+        <img class="theme_img dark-theme-img smallHeader" src="https://cdn.bitkeep.vip/u_b_b72c61e0-e182-11ec-a88a-8ff4d34ab1ac.svg+xml" alt="">
+        <div class="list listDisplay">
+            <div class="item">
+                <div class="cur j_cur text1" data="download">
+                   <p  class="GB" bklang="h_2">Wallet</p> 
+                   <span class="jian"></span>
+                </div>
+                <ul class="more BG0 border03">
+                    <li data-val="/download?type=1""><a class="text1">iOS</a></li>
+                    <li data-val="/download?type=0"><a class="text1">Android</a></li>
+                    <li data-val="/download?type=2"><a class="text1">Chrome App</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="cur j_cur text1 oncBkb" data="defi" data-val="/defi">
+                    <p><b class="GB">DeFi</b></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur j_cur text1 dappStoreOnc" data="dapp" data-val="dappStoreEn">
+                    <p><b class="GB">Dapp</b></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur j_cur text1 oncBkb" data="bkb" data-val="/bkb">
+                    <p><b class="GB">BKB</b></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur">
+                   <p><a href="https://blog.bitkeep.com/en/" bklang="h_3" target="_blank" class="GB text1">Blog</a></p> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur">
+                   <p><a href="https://study.bitkeep.com/en/" target="_blank" class="GB text1">Academy</a></p> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur">
+                   <!-- <p bklang="h_4">帮助</p>  -->
+                   <p><a class="GB text1" id="Developers" href="https://docs.bitkeep.com" target="_blank" bklang="h_6">Developers</a></p> 
+                   <!-- <span class="jian"></span> -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="cur j_cur text1" data="about">
+                   <p bklang="h_5" class="GB">About</p> 
+                   <span class="jian"></span>
+                </div>
+                <ul class="more BG0 border03">
+                    <li data-val="/about""><a bklang='h_7' class="text1">Company</a></li>
+                    <li data-val="/jobs"><a bklang='h_9' class="text1">Join Us</a></li>
+                    <li data-val="/about?Contact_us"><a bklang='h_8' class="text1">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- 抽屉显示 -->
+    <div class="header-drawer colorBackground0" id="box">
+        <div class="close-img">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNS4yNzk2IDUuNTUyOTlDMTUuNTA4NCA1LjMyNDE3IDE1LjUwODQgNC45NTMxOCAxNS4yNzk2IDQuNzI0MzVDMTUuMDUwNyA0LjQ5NTUzIDE0LjY3OTcgNC40OTU1MyAxNC40NTA5IDQuNzI0MzVMMTAuMDAzOSA5LjE3MTM3TDUuNTU2OSA0LjcyNDM1QzUuMzI4MDggNC40OTU1MyA0Ljk1NzA4IDQuNDk1NTMgNC43MjgyNiA0LjcyNDM1QzQuNDk5NDMgNC45NTMxOCA0LjQ5OTQzIDUuMzI0MTcgNC43MjgyNiA1LjU1Mjk5TDkuMTc1MjcgMTBMNC43MjgyNiAxNC40NDdDNC40OTk0MyAxNC42NzU5IDQuNDk5NDMgMTUuMDQ2OSA0LjcyODI2IDE1LjI3NTdDNC45NTcwOCAxNS41MDQ1IDUuMzI4MDggMTUuNTA0NSA1LjU1NjkgMTUuMjc1N0wxMC4wMDM5IDEwLjgyODdMMTQuNDUwOSAxNS4yNzU3QzE0LjY3OTcgMTUuNTA0NSAxNS4wNTA3IDE1LjUwNDUgMTUuMjc5NiAxNS4yNzU3QzE1LjUwODQgMTUuMDQ2OSAxNS41MDg0IDE0LjY3NTkgMTUuMjc5NiAxNC40NDdMMTAuODMyNSAxMEwxNS4yNzk2IDUuNTUyOTlaIiBmaWxsPSIjNzA3MDc2Ii8+Cjwvc3ZnPgo=" alt="">
+        </div>
+        <ul>
+            <span class="text1 title">Wallet<b>
+                <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_00aa7b10-da7a-11eb-bd2f-03aa2946fb23.png">
+                <img class="light-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00LjM5IDcuNTEyYS41LjUgMCAwMS0uNzggMGwtMi45Ni0zLjdBLjUuNSAwIDAxMS4wNCAzaDUuOTJhLjUuNSAwIDAxLjM5LjgxMmwtMi45NiAzLjd6IiBmaWxsPSIjRTVFNUU1Ii8+PC9zdmc+" alt="">
+            </b></span>
+            <li data-val="/download?type=1""><a class="text1">iOS</a></li>
+            <li data-val="/download?type=0"><a class="text1">Android</a></li>
+            <li data-val="/download?type=2"><a class="text1">Chrome App</a></li>
+        </ul>
+        <ul>
+            <li class="text1" data-val="/defi">DeFi</li>
+        </ul>
+        <ul>
+            <li class="text1" data-val="/bkb">BKB</li>
+        </ul>
+        <ul>
+            <li class="text1" data-val="dappStoreEn">Dapp</li>
+        </ul>
+        <ul>
+            <li data-val="https://blog.bitkeep.com/en/" class="text1">
+                Blog
+            </li>
+        </ul>
+        <ul>
+            <li data-val="https://study.bitkeep.com/en/" class="text1">
+                Academy
+            </li>
+        </ul>
+        <ul>
+            <li data-val="https://docs.bitkeep.com" class="text1">
+                Developers
+            </li>
+        </ul>
+        <ul>
+            <span class="text1 title">About<b>
+                <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_00aa7b10-da7a-11eb-bd2f-03aa2946fb23.png">
+                <img class="light-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00LjM5IDcuNTEyYS41LjUgMCAwMS0uNzggMGwtMi45Ni0zLjdBLjUuNSAwIDAxMS4wNCAzaDUuOTJhLjUuNSAwIDAxLjM5LjgxMmwtMi45NiAzLjd6IiBmaWxsPSIjRTVFNUU1Ii8+PC9zdmc+" alt="">
+            </b></span>
+            <li data-val="/about""><a bklang='h_7' class="text1">Company</a></li>
+            <li data-val="/jobs"><a bklang='h_9' class="text1">Join Us</a></li>
+            <li data-val="/about?Contact_us"><a bklang='h_8' class="text1">Contact Us</a></li>
+        </ul>
+        <div class="smallPage">
+            <ul>
+                <div class="text1">
+                    <b>Theme</b>
+                    <b class="leftDrawImg">
+                        <img class="theme_img light-theme-img"
+                                src="https://cdn.bitkeep.vip/u_b_91b67900-e0b5-11ec-97b8-cf86fa2fd6d0.png" alt="">
+                        <img class="theme_img dark-theme-img"
+                            src="https://cdn.bitkeep.vip/u_b_b72c61e0-e182-11ec-a88a-8ff4d34ab1ac.svg+xml" alt="">
+                    </b>
+                </div>
+            </ul>
+            <ul>
+                <li class="text1" data-val="/download?type=0">
+                    Download
+                </li>
+            </ul>
+            <ul>
+                <span class="text1 title">English<b>
+                        <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_00aa7b10-da7a-11eb-bd2f-03aa2946fb23.png">
+                        <img class="light-icon"
+                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00LjM5IDcuNTEyYS41LjUgMCAwMS0uNzggMGwtMi45Ni0zLjdBLjUuNSAwIDAxMS4wNCAzaDUuOTJhLjUuNSAwIDAxLjM5LjgxMmwtMi45NiAzLjd6IiBmaWxsPSIjRTVFNUU1Ii8+PC9zdmc+"
+                            alt="">
+                    </b></span>
+                    <li class="langItem" data-val="/zh/index" data="简体中文"><a class="text1">简体中文</a></li>
+                    <li class="langItem" data-val="/" data="English"><a class="text1">English</a></li>
+                    <li class="langItem" data-val="/ko/index" data="한국인"><a class="text1">한국인</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="pop" id='popConfirmDownLoad'>
+    <div class="confirmSuccessCont" style="top: 36%;">
+        <img class="close dark-icon" src="https://cdn.bitkeep.vip/u_b_1709a820-a5e7-11ec-9457-d57dbe519c92.png" alt="close">
+        <img class="close light-icon" src="https://cdn.bitkeep.vip/u_b_a94fe520-a8e7-11ec-a370-2b17073aca89.png" alt="close">
+        <div class="ruleDetailcontent">
+            <div class="install_img">
+                <img src="https://cdn.bitkeep.vip/u_b_e6cf4100-ebab-11ec-9db1-7f301d902f4e.png" alt="" />
+            </div>
+            <div class="textPrimary0 setBitkeep text1">BitKeep</div>
+            <p class="textPrimary0 setF text1">
+                You have not installed the BitKeep plugin wallet
+            </p>
+            <div class="dowm_btn_box">
+                <div class="dowm_btn_chrome">Download BitKeep Plugin Wallet</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop" id='popConfirmDownLoadInstall'>
+    <div class="confirmSuccessCont" style="top: 36%;">
+        <img class="close dark-icon" src="https://cdn.bitkeep.vip/u_b_1709a820-a5e7-11ec-9457-d57dbe519c92.png" alt="close">
+        <img class="close light-icon" src="https://cdn.bitkeep.vip/u_b_a94fe520-a8e7-11ec-a370-2b17073aca89.png" alt="close">
+        <div class="ruleDetailcontent" style="padding:0">
+            <div class="install_img">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_fc2ac880-ebab-11ec-9db1-7f301d902f4e.png"
+                class="success"
+                alt=""
+              />
+            </div>
+            <div class="textPrimary0 installSuccess text1">Completed plugin installation?</div>
+            <div class="dowm_btn_box">
+              <div class="dowm_btn text1">Refresh to connect</div>
+            </div>
+            <p class="textPrimary0 setDown text1">Not installed?<span class="colorPrimary cliDownLoad">Click to download</span></p>
+          </div>
+    </div>
+</div>
+      
+      <div class="one">
+        <div class="one-box contbox">
+          <div class="one-left">
+            <h1 class="text1">Find the hottest assets in BitKeep</h1>
+            <p class="text1">A crypto wallet that anyone can get started in one minute</p>
+            <ul>
+              <li class="text1">
+                Safe storage of cryptocurrencies - take control of your own assets
+              </li>
+              <li class="text1">
+                50+ main chains and 45000+ crypto assets supported - trade various assets on DEX
+              </li>
+              <li class="text1">
+                10,000+ DApps - enjoy DeFi
+              </li>
+            </ul>
+            <div class="one-btns">
+              <div class="one-btns-top">
+                
+                  <div class="one-btn button button-m oncDownLoad" data-val="/download">
+                    <a>
+                      Download
+                    </a>
+                  </div>
+                
+                <div class="one-qrcode">
+                  <img class="dark-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN0SURBVHgB7ZztkdowEIZfbvI/lKASrgRSQa6DKBWEVJBcBUkH51SQowKTCu46QKkAOki0tnUWYEB4JWHDPjN7ZmRbc/OOvla71gSHmVqbWfvYXBVui1drxtrCWoEz+WJtbe2fWGUraxoBUKsrvRfp9xx165vitrhHLRqJ5+uhDr2gvIep9T1AcGi02tC1szGV3gMKwi4KrYjl7k0NES8EhXZumPs3nLIawiloaHPDXNWVNdrWJ4ThhruHO7STxSOEUBbNldbIeEGt5j2EUBS8XuvWOEI4NPZVuk3QijeBcA6VbncQWIiATERAJiIgExGQiQjIRARkIgIyeYf4kG/9A/15tva1o5zCDHP0Y2Ptl7WfSEBsV+4F/BjErl+uItS5RlyqelN04RixkxTxlyQxnRRd2OcD6tBgCL8RtiNkmnpDSbrPmVpAg3ABNwjHYCDILMwkdQv0UagzHHyMtSV4zLAfCFsiYyuNPQuvvDqVV66xPzM+efdLr3y2U6fCdpaAT9FRr/bu++UxSTYL3xQiIBMRkEnOScRgP03sD/gssT++GWQk1yRyir6TyClkEhkyqbvw0xnPhgb2XQ7jIEgt4AzxcanHgyBFF+ZODOQTm4Cyc3lGAlJlJszQH0ru7tpYUODlLh6qty+VbpLa0R9J7YiBCMhEBGSSQkBaz3E+0iFPQ2FExHZzCvAjaN8xfEbnylG8edXYbny3QPdmKrx3zvWhg0gt4GfUy6MQO5XkTh6Iauw9wlHgryEPknM7KyVLtMOQQUauRcACPT5JjUFOAWfWPu2Ukd9cYMTkDmvqjvICI0YW0kxEQCYiIJOcY+AS9brQx2DkXDqsGYsp2vy/DeJunB7lWrowuXbOXct61kPqFki50t8Cnx3lqSCpBfS7FheKaTx6v30oYGQO3Ev+IXns7SwNfjK4wvCp/t9UQSVOy8s6CTCQqBwTicrFQARkIgIyEQGZiIBMREAmIiATEZCJL+AonflLQwKa5rcIGI7L534lAV1KbtZ9tJHjBPxLf9yJjCWEUGjj9i0Ph7quS0eTVngajY4PfuYY117cpVA4ct5siZEmOGZC4cgxyMQU24dNawgOGtrcMHe0gdEN1xJ9IUM/w7oWXC4iDW2+HiUCl3sa219d3rqtceDUpFPb+Br1Ub8Kt9cKDepsikVz7YzT/AdjfbnE/pYHVwAAAABJRU5ErkJggg==" alt="QRcode" />
+                  <img class="light-icon" src="data:image/png;base64,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" alt="QRcode" />
+                  <div class="one-erweima">
+                    <img
+                      src="https://cdn.bitkeep.vip/u_b_8bb403d0-a049-11ec-a3eb-f758fa002ae8.png"
+                      alt="erweima"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one-arrow animate__bounce animate__animated">
+              <img class="dark-icon" src="data:image/png;base64,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" alt="arrow" />
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_7cbc8a20-e863-11ec-95b1-8dc52464c9ae.png" alt="arrow" />
+            </div>
+          </div>
+          <div class="one-right">
+            <!-- <div class="oneqiu qiu1 ante1">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_8bb6b7a0-ded5-11eb-8c08-ff617688b8f3.png"
+                alt="01white"
+              />
+            </div>
+            <div class="oneqiu qiu2 ante2">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_8bb6b7a0-ded5-11eb-8c08-ff617688b8f3.png"
+                alt="01white"
+              />
+            </div>
+            <div class="oneqiu qiu3 ante3">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_8bb6b7a0-ded5-11eb-8c08-ff617688b8f3.png"
+                alt="01white"
+              />
+            </div>
+            <div class="oneqiu qiu4 ante4">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_8bb6b7a0-ded5-11eb-8c08-ff617688b8f3.png"
+                alt="01white"
+              />
+            </div>
+            <div class="oneqiu qiu5 ante5">
+              <img
+                src="https://cdn.bitkeep.vip/u_b_8bb6b7a0-ded5-11eb-8c08-ff617688b8f3.png"
+                alt="01white"
+              />
+            </div> -->
+            <!-- <div class="oneImgBox">
+              <a href="https://polygon.bitkeep.com/" target="_black" title="Polygon Consensus 2022">
+                <img src="https://cdn.bitkeep.vip/u_b_ede69780-c55f-11ec-aa57-411cc0b3f4cb.png" alt="Polygon Consensus 2022">
+              </a>
+            </div> -->
+            <div class="oneImgBox">
+              <div class="onevideobtn j_onevideobtn"><img src="https://cdn.bitkeep.vip/u_b_17e526a0-bfa7-11ec-abd8-19c15b6f0acd.png" alt=""></div>
+              <img
+                class="dark-icon"
+                src="https://cdn.bitkeep.vip/u_b_0f3949c0-9def-11ec-aac8-bf8a172584ab.png"
+                alt="Best mobile crypto wallet"
+              />
+              <img
+                class="light-icon"
+                src="https://cdn.bitkeep.vip/u_b_cb742480-e88a-11ec-95b1-8dc52464c9ae.png"
+                alt="Best mobile crypto wallet"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="two BG1 text1">
+        <div class="two-box contbox">
+          <div class="xx">
+            <!-- <img src="https://cdn.bitkeep.vip/u_b_bb0fb250-9df1-11ec-aac8-bf8a172584ab.png" alt="dots" /> -->
+          </div>
+          <h2>All You Need is A Set of Mnemonic Phrases</h2>
+          <p>
+            With a set of mnemonic phrase, you can manage numerous tokens across 50+ main chains
+          </p>
+          <p>
+            BitKeep adopts an original and unique DESM encryption algorithm to safeguard your digital assets.
+          </p>
+          <div class="iconBox">
+            <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_19307980-e8b3-11ec-8113-c94df49cd896.png" alt="">
+            <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_b19c29e0-e8bc-11ec-8113-c94df49cd896.png" alt="">
+          </div>
+          <!-- <div class="iconBox">
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b256f280-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="BTC"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b256cb71-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="ETH"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2e01fb0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="USDT"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2dfaa80-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="TRX"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b25740a0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="DOT"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2571990-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="EOS"
+                />
+              </div>
+            </div>
+            <div class="iconItem iconItem7">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b257dce0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="BNB"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b27e50a0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="HT"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2b6c5c0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="OKT"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b29c8701-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="NEO"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_76073f00-d238-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="ONT"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b29c8700-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="LINK"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2f70310-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="YFI1"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2f443f0-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="YFI"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2931120-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="IOST"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b2788440-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="FIL"
+                />
+              </div>
+            </div>
+            <div class="iconItem">
+              <div class="imgbox">
+                <img
+                  src="https://cdn.bitkeep.vip/u_b_b256cb70-d0b6-11eb-a1fd-1b9796c35a14.jpeg"
+                  alt="DOG"
+                />
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="three text1">
+        <div class="three-dots">
+          <!-- <img
+            src="https://cdn.bitkeep.vip/u_b_c156bea0-ded5-11eb-8c08-ff617688b8f3.png"
+            alt="dots"
+          /> -->
+        </div>
+        <div class="three-box contbox">
+          <div class="three-left">
+            <h2 bklang="three_1">DeFi-focused Crypto Wallet</h2>
+            <p bklang="three_2 text1">
+              Dedicated to the DeFi market, BitKeep discovers and identifies quality DeFi projects for you to explore the DeFi world with ease and peace of mind
+            </p>
+            
+              <div class="three-btn button button-m oncDownLoad" data-val="/defi">
+                <a>Try it now</a>
+              </div>
+            
+          </div>
+          <div class="three-right">
+            <img
+              class="dark-icon"
+              src="https://cdn.bitkeep.vip/u_b_7ab1e1b0-e892-11ec-8113-c94df49cd896.png"
+              alt="Crypto DeFi wallet"
+            />
+            <img
+              class="light-icon"
+              src="https://cdn.bitkeep.vip/u_b_1569e710-eb91-11ec-a8db-d3170cc4425f.png"
+              alt="Crypto DeFi wallet"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="four text1">
+        <div class="four-box contbox">
+          <div class="four-adots"></div>
+          <div class="four-left">
+            <div class="four-banner">
+              <img
+                class="dark-icon"
+                src="https://cdn.bitkeep.vip/u_b_c8788600-b56c-11ec-8906-1d61b24152ad.png"
+                alt="Bitkeep DApp store on laptop and mobile"
+              />
+              <img
+                class="light-icon"
+                src="https://cdn.bitkeep.vip/u_b_648e37b0-eb91-11ec-a8db-d3170cc4425f.png"
+                alt="Bitkeep DApp store on laptop and mobile"
+              />
+            </div>
+          </div>
+          <div class="four-right">
+            <h2 bklang="four_1">NFT Market</h2>
+            <p bklang="four_2">
+              Equipped with all-platform search capability to optimize your NFT investment journey, the aggregated multi-chain NFT Market allows users to make a purchase with any token.
+            </p>
+            
+              <div class="four-btn button button-m oncDownLoad" data-val="/download?type=0">
+                <a>Try it now</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="four2 BG1 text1">
+        <div class="four2-box contbox text1">
+          <div class="four2-right">
+            <h2 bklang="four2_1">BitKeep DApp Store</h2>
+            <p bklang="four2_2">
+              The DApp Store that you can navigate with ease in one minute
+            </p>
+            <p bklang="four2_3">
+              Enjoy seamless, simple and secure access to the blockchain and all decentralized applications. The DApp Store makes it easy for users to search for and use any DApps
+            </p>
+            
+              <div class="four2-btn button button-m oncDownLoad" data-val="dappStoreEn">
+                <a>Try it now</a>
+              </div>
+            
+            <div class="four2-bdots"></div>
+          </div>
+          <div class="four2-left">
+            <div class="four2-adots"></div>
+            <div class="four2-banner">
+              <img
+              class="dark-icon"
+                src="https://cdn.bitkeep.vip/u_b_8fb4d730-e8b9-11ec-8113-c94df49cd896.png"
+                alt="Bitkeep DApp store on laptop and mobile"
+              />
+              <img
+                class="light-icon"
+                src="https://cdn.bitkeep.vip/u_b_b7132540-e86c-11ec-95b1-8dc52464c9ae.png"
+                alt="Bitkeep DApp store on laptop and mobile"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="five">
+        <div class="five-box contbox">
+          <h2 bklang="five_1">BitKeep Provides Service to Global Users</h2>
+          <p bklang="five_2">
+            Users from across more than 168 countries have been enjoying the safe and reliable digital asset management service provided by BitKeep
+          </p>
+          <ul class="five-list">
+            <li>
+              <p bklang="five_3">Number of Users</p>
+              <p class="five-num GB">5,000,000<span>+</span></p>
+            </li>
+            <li>
+              <p bklang="five_4">Transactions Amount</p>
+              <p class="five-num GB" bklang="five_5">
+                <span>$</span>500<span bklang="five_5">+ Billion</span>
+              </p>
+            </li>
+            <li>
+              <p bklang="five_6">Covered Countries And Regions</p>
+              <p class="five-num GB">168<span>+</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="five-user"></div>
+        <div class="five-a"></div>
+        <div class="five-b"></div>
+      </div>
+      <div class="seven text1">
+        <div class="seven-bdots">
+          <!-- <img src="https://cdn.bitkeep.vip/u_b_f93d9860-9df3-11ec-aac8-bf8a172584ab.png" alt="07adots" /> -->
+        </div>
+        <div class="seven-box contbox">
+          <div class="seven-left">
+            <h2 bklang="seven_1">Use BitKeep Now</h2>
+            <p bklang="seven_2">
+              Secure, simple and easy-to-use crypto wallet
+            </p>
+          </div>
+          <div class="seven-right">
+            <div class="seven-btns">
+              
+                <div class="seven-btn oncDownLoad" data-val="/download?type=0">
+                  <a>Download Now</a>
+                </div>
+              
+              <div class="seven-qrcode">
+                <img class="dark-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN0SURBVHgB7ZztkdowEIZfbvI/lKASrgRSQa6DKBWEVJBcBUkH51SQowKTCu46QKkAOki0tnUWYEB4JWHDPjN7ZmRbc/OOvla71gSHmVqbWfvYXBVui1drxtrCWoEz+WJtbe2fWGUraxoBUKsrvRfp9xx165vitrhHLRqJ5+uhDr2gvIep9T1AcGi02tC1szGV3gMKwi4KrYjl7k0NES8EhXZumPs3nLIawiloaHPDXNWVNdrWJ4ThhruHO7STxSOEUBbNldbIeEGt5j2EUBS8XuvWOEI4NPZVuk3QijeBcA6VbncQWIiATERAJiIgExGQiQjIRARkIgIyeYf4kG/9A/15tva1o5zCDHP0Y2Ptl7WfSEBsV+4F/BjErl+uItS5RlyqelN04RixkxTxlyQxnRRd2OcD6tBgCL8RtiNkmnpDSbrPmVpAg3ABNwjHYCDILMwkdQv0UagzHHyMtSV4zLAfCFsiYyuNPQuvvDqVV66xPzM+efdLr3y2U6fCdpaAT9FRr/bu++UxSTYL3xQiIBMRkEnOScRgP03sD/gssT++GWQk1yRyir6TyClkEhkyqbvw0xnPhgb2XQ7jIEgt4AzxcanHgyBFF+ZODOQTm4Cyc3lGAlJlJszQH0ru7tpYUODlLh6qty+VbpLa0R9J7YiBCMhEBGSSQkBaz3E+0iFPQ2FExHZzCvAjaN8xfEbnylG8edXYbny3QPdmKrx3zvWhg0gt4GfUy6MQO5XkTh6Iauw9wlHgryEPknM7KyVLtMOQQUauRcACPT5JjUFOAWfWPu2Ukd9cYMTkDmvqjvICI0YW0kxEQCYiIJOcY+AS9brQx2DkXDqsGYsp2vy/DeJunB7lWrowuXbOXct61kPqFki50t8Cnx3lqSCpBfS7FheKaTx6v30oYGQO3Ev+IXns7SwNfjK4wvCp/t9UQSVOy8s6CTCQqBwTicrFQARkIgIyEQGZiIBMREAmIiATEZCJL+AonflLQwKa5rcIGI7L534lAV1KbtZ9tJHjBPxLf9yJjCWEUGjj9i0Ph7quS0eTVngajY4PfuYY117cpVA4ct5siZEmOGZC4cgxyMQU24dNawgOGtrcMHe0gdEN1xJ9IUM/w7oWXC4iDW2+HiUCl3sa219d3rqtceDUpFPb+Br1Ub8Kt9cKDepsikVz7YzT/AdjfbnE/pYHVwAAAABJRU5ErkJggg==" alt="QRcode" />
+                <img class="light-icon" src="data:image/png;base64,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" alt="QRcode" />
+                <div class="seven-erweima">
+                  <img
+                    src="https://cdn.bitkeep.vip/u_b_8bb403d0-a049-11ec-a3eb-f758fa002ae8.png"
+                    alt="erweima"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="eight">
+        <div class="eight-box contbox">
+          <h2>Partners</h2>
+          <div class="imgBox">
+            <img
+              src="https://cdn.bitkeep.vip/u_b_b3683db0-00d5-11ec-aa9c-bbc3646364fc.png"
+              alt="Bitkeep's partner"
+            />
+          </div>
+        </div>
+      </div> -->
+      <div class="nine text1">
+        <div class="nine-box contbox">
+          <h2>Investor</h2>
+          <ul class="nine-list">
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_cc85bb30-c612-11ec-8b1d-6d2d92fa3e80.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e1007a0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_69349ba1-c6ad-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e0e0bd0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_cc83bf60-c612-11ec-8b1d-6d2d92fa3e80.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e155ed0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_cc859420-c612-11ec-8b1d-6d2d92fa3e80.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e1781b0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+          </ul>
+          <ul class="nine-list">
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_69344d80-c6ad-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e138a10-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_cc82fc10-c612-11ec-8b1d-6d2d92fa3e80.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e118e40-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_69347490-c6ad-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e264ec0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_69349ba0-c6ad-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e284a90-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+          </ul>
+          <ul class="nine-list">
+            <li></li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_6937a8e0-c6ad-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e401850-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li>
+              <img class="dark-icon" src="https://cdn.bitkeep.vip/u_b_13a9daa0-c6bd-11ec-84d3-09f9df2bf89a.png" alt="">
+              <img class="light-icon" src="https://cdn.bitkeep.vip/u_b_9e2b7ee0-e86e-11ec-95b1-8dc52464c9ae.png" alt="">
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="pop" id="pop">
+        <div class="popcont indexPop">
+          <span class="close-btn" id="closeBtn"></span>
+          <div class="popAdots"><img src="https://cdn.bitkeep.vip/u_b_7cbee220-a038-11ec-a3eb-f758fa002ae8.png" alt=""></div>
+          <div class="indexTitleBox">
+            <h1>BitKeep Chrome</h1>
+            <h1>Extension is now live!</h1>
+            <p>Your Multi-Chain Digital Asset Management Expert</p>
+            <div class="indexBtn1">
+              <a
+                href="https://chrome.google.com/webstore/detail/bitkeep/jiidiaalihmmhddjgbnbgdfflelocpak"
+                target="_blank"
+              >
+              Use It Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="pop" id="pop1">
+        <div class="popcont1 indexPop1">
+          <span class="close-btn1" id="closeBtn1"><img src="https://cdn.bitkeep.vip/u_b_354593d0-c22a-11ec-a81a-8d7b9dd745b9.png" alt=""></span>
+          <div id="videoBox"></div>
+        </div>
+      </div>
+      
+        <div class="footer">
+    <div class="footer-box contbox">
+        <div class="footer-listbox">
+            <div class="listbox-left oncDownLoad" data-val="/">
+                <a title = "BitKeep,  a best crypto wallet">
+                    <img src="https://cdn.bitkeep.vip/u_b_41593870-9df4-11ec-aac8-bf8a172584ab.png" alt="BitKeep,  a best crypto wallet">
+                </a>
+            </div>
+            <div class="listbox-right">
+                <div class="listbox-item">
+                    <ul class="oncDownLoad">
+                        <li class="cur" bklang="footer_1">About us</li>
+                        <li data-val="/about"><a bklang="footer_2">Company</a></li>
+                        <li data-val="/jobs"><a bklang="footer_3">Join Us</a><span class="footer_3_tip">Hiring!</span></li>
+                        <li data-val="/about?Contact_us"><a bklang="footer_4">Business</a></li>
+                    </ul>
+                </div>
+                <div class="listbox-item">
+                    <ul class="oncDownLoad">
+                        <li class="cur" bklang="footer_8">User Support</li>
+                        <li data-val="/about?Contact_us"><a bklang="footer_12">Contact Us</a></li>
+                        <li><a href="https://forms.gle/Tqxy6dHhhhR6CvS9A" bklang="footer_16" target="_blank">Submit DApp</a></li>
+                        <li><a href="https://forms.gle/jqHpdeZK3Sh2YJ7R9" bklang="footer_17" target="_blank">Submit Token</a></li>
+                        <li><a href="https://forms.gle/aTnyNtzNB9aGktA18" bklang="footer_18" target="_blank">Submit NFT</a></li>
+                    </ul>
+                </div>
+                <div class="listbox-item">
+                    <ul class="oncDownLoad">
+                        <li class="cur" bklang="footer_13">Wallet</li>
+                        <li data-val='/download?type=1'><a>iOS</a></li>
+                        <li data-val="/download?type=0"><a>Android</a></li>
+                        <li data-val="/download?type=2"><a>Chrome App</a></li>
+                    </ul>
+                </div>
+                <div class="listbox-item">
+                    <ul>
+                        <li class="cur" bklang="footer_13">Learn</li>
+                        <li><a href="https://study.bitkeep.com/en/?ht_kb=how-do-i-change-my-password" target="_blank">How to create a wallet</a></li>
+                        <li><a href="https://study.bitkeep.com/en/?ht_kb=knowledge-base-wordpress-plugin" target="_blank">How to transfer money</a></li>
+                        <li><a href="https://study.bitkeep.com/en/?ht_kb=how-to-trade-buy-sell" target="_blank">How to trade</a></li>
+                        <li><a href="https://study.bitkeep.com/en/?ht_kb=how-to-perform-cross-chain-exchange" target="_blank">How to exchange across chains</a></li>
+                        <li><a href="https://study.bitkeep.com/en/?ht_kb=how-to-trade-bayc-nfts-with-bitkeep" target="_blank">How to trade NFTs</a></li>
+                    </ul>
+                </div>
+                <div class="listbox-item" style="margin-right: 0;">
+                    <ul>
+                        <li class="cur" bklang="footer_13">Resource</li>
+                        <li><a href="https://github.com/bitkeepwallet/download" target="_blank">Material</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>© 2018-2022 BitKeep All Rights Reserved</p>
+            <ul>
+                <li class="telebox">
+                    <a href="https://t.me/bitkeep" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPwSURBVHgB7ZzRcdswDIZ/9/redANtUGeCKhM0maDpBHUniDOB3QmSTpBkAqkTJJ5A2iDpBCh4lFtHESmRhCTKp+8Ol3MkSxQOBEEAFjAzMzMzMzNVFhgYIjrhPylLwvKJZclyUn0+pKzkhWXHkrM8LRaLFxwbSiksVywZhZOxrFgSTB1+iJRklGJTVoqpMYBi6hQs54gdHmQysGLq3FCsU48H9p3lmcanYLlETPCANhQfGwgQtMyTXrJz6OU6Rp5YLjg0KOGJt4JIz/UMb+OX2ChZznyV5KWgCSlnT8ly6hNkvoMf95iOchQJS1a5BCecFVQ5v1h9jg21pblCn7ByLmn6rFyeubMPoun5HRPKD512ddouU2yN6StHofzQTdeTO1kQ6X3OHY4LtfTnbSd1VVCB47CeQ3JW0FnbSa1TjHQ6IUGcKH/yk+WC5RpupCSRKqFxd+cmMpZzqsU15E7W9vzWKUZ65SoQB3tr2TZFxJWynuHOR1uE3TbFxk5CqYHn0A5VPcja8jBL+GGNi97DzheMQ87ywHLrsH9K4cdn20HjFAswWV+UIn6x3HdZfutU/iSFH8ZpZrMgX5N1JYe7tTQRMt4UegP+hvctX+qLvcO9DUlm7WHr2dfWfElMB4a2oJzl2mcKtZAgDGN2wqagD5BBpT3VFNr2WBVNEYbRGGwKSuBPkMP1IDQ/ZZyetlWM4E4OGYfrhOdYX8HjbdRFWxzkwg++xxYDQz2Xnn1z0k3cYxx6DUckFVRUm8hLGrb8O1S89hrSJdwQMtJtKr0+AF//kcJx35AL3fjfAFjWEIZ035EExrSHbYrtIEfCopobQqLdJqSs84/pgE1BT5BFKUd6ukldz/isNgWVkOcrZEkhQ246MHS640UlviAEyRUTjOkOowVVX8ghi3KqKQQgHUokCCcPSbn+hjxp0z/pf/te1zSvlP95gC+Cy+ghRcN9lvS6fa+1yYDP2ZIMCUKgfso+iUU5ewrb4IXG1Vr26aKglOTZHFzb1vhZkKEhk2QaRlNIQP1YUeFw7qY2niWFI1fvo36syJWCtGKUX7yjcDotBi79QSFlldhQCb1vXU50baB6RFj1IAZKOHS9ds4HVRd07aCIkWuJUpMRkos/xsA5JezcJ016j6b80TiZPH92bDnOY3ZOuVb7FtWZVWI6lPDsVPHKSU9MSSUCforgnbSvbqiUJJ1Yk0RlRU97dcpdoDgd9+A1Oiukyz0FjY/ao60QI6RzOrc0HhlN4dfQpDtQCxqOjOZfPx+RYuqQnnorknuxwJrka2yNjPVqChXRptB9PfvXUiS1U0voPiMVRuyqz/lRvppiZmZmZmamF/4CD8zpI0zdIzsAAAAASUVORK5CYII=" alt="Bitkeep's official Telegram account"></a>
+                </li>
+                <li><a href="https://twitter.com/BitKeepOS" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOASURBVHgB7ZvrcdswDIDhXv83naD0BHUmqDNBnQnqTlB3gtoTJJ3AyQRxJpA6QZwJJE8Qb4ACR+osO37wJZpM+N3h5IsVUgJBAARpgEwmk8lkMplMJpPxTg8SAhGHdBmRfCURra9qJY+9Xm8B7w1WDEmBelQkfwzaHYMr1MgIzgD1e0HygHZUJOJAm6OWwgW4oBrUHhVf8IOrfl35od5hTDIneWl9NwdXVMMNQZTUGpQuqdDVetTDLnYa7lxJ1Mcdds8AfIDbJtm5knDbYruA32fY6o8d9ZTkAkxBaeqHuLFq9HSfT9gdFUoHPcFtfzQBG1A6ylMdCvAEtTXA8EyPPdMHcEOQVGg7Aq8JnU7cU2I5BRdwvw/aBytKgAOonwz64FbnmXQsaAl6CJDWNHdQlHefdoAZWY4fq0fp4W2YYytaaPZVYfeMTZ5Jx4JsF39jkkK9NIduAXFQm9x8UkFkijzFSrBHkHBKz4riEH6LMtSKPfc+Q2RolTvUyzyBfx+xBunj+Loi+UbiJ8M9zBUNeql7s3Y9CGUov4H0uVSzQoujUwxloij4MzXKYXEG6VOb3KzjpCsVkTiJYyX9hoShgV4b3X/sS5RrrZedPzcdhMpZfLIkBV2a/MNRC1Larnf+fAFpKodZGd6vNcUe4e1QgiFdJooxoh29GnTzoIIuQ0ibNbmMz2CIbrnjLYT3f2CBloJU5pm6kqxchdHOKsrqW9DtH09wNO6b5kCMUUVRVd9StKSFjXIYq715lFsmD7C9Px4zbD01WGBVk+bFHkmfPl6T3MMmu46R0lY5zEcwBOWemACZlX4h+QRSQbFm104uwXiKqTJqAWnAvucaHLD1Qakkjn2X6cXY7oulEMlmrsphrE+YRV5hrFUQccZ6ZzXyCuMVxILa0qkwHqYQGyhr1yHO9JxCazvZBK+nXFEW+Ick30HmSiyh8qNnmvZdbxn5A6VVFRiGJXZwVqkz6GF/of6pkPejHDQ7z+yDu+iVg/KY3iSwYpgpBMBmLcYjJmDjjNkxhhzFmuSnyf66C3sVhDIa8aqdX7xZqTeKEXA+/pJMbYtf3sF4ksACDQ9jBQXPp6giasXsgvLgk+2PS3Th9ICP/UWR9NnWg9gfDWHz2y2Xl2kOUfG+VRnK+eriZamhFDZQIkCWYvdFtlpdV+pz6aNmk8lkMplMJpPJZDKJ8R/6QQfplC097wAAAABJRU5ErkJggg==" alt="Bitkeep's official Twitter account"></a></li>
+                <li><a href="https://discord.gg/qYTatUzNjM" target="_blank"><img src="https://cdn.bitkeep.vip/u_b_e6975620-1cec-11ec-b749-09299a4f8b9a.png" alt="Bitkeep's official Discord account"></a></li>
+                <!-- <li><a href="https://weibo.com/p/1006066577569789/home?from=page_100606&mod=TAB&is_all=1#place" target="_blank"><img src="../../images/icon/weibo_logo.png" alt="Bitkeep's official Weibo account"></a></li> -->
+                <li><a href="https://medium.com/@bitkeepblog" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALjSURBVHgB7ZuNcdswDIXhXgdoN9AIGUEjpBOUnSDtBJEnaDJBnQnqThB1A28gb2BvwII1ec25FvFk80f24bvjKY4gSnqGAFCkiRRFURRFURTlEqy1j9x29vpx9/CdUuI6tLdHh9z7AjHizna8+UC3xX6xWHyUjFCBLN0gLJB4/+9IiaICCahAAiqQgAokoAIJvKc0bLj9Am0f6LKaquf2G7BruH2mEoCV6R3YV2cvowHO0XAbpI4oFRZj4CZ6hrOx54/pXsH+B6QzAkgZgxpuj5IRF6973jzTebwANj/8tZTDTkN87v23PJUB6NdM6ZAAcmSxTjLwXoQG9UAP2DSUmBwCNaDdE01jSRWoVgexF/WEeYWjZ/stVSCbQD7OSFkN9YoX36ehwuT0ICeOiRl4L9pSnC3brViclkpnJ8r/iCGVrJTye781VIHcAt35bz7Gits+sn9pD9VzmWHDESWCdLR4FArHEJxbqkQJgVrAi1zKP+VFoXIWK/RclErz0cfDe9HxMGJfMzgHSglkgJS/Ovq8DsdSRUoWil9jO9lb3Dul/s2/nmsG50BJgR4mFI4bL1hLlSkpkBNH8qKeDl4Uslq14BwoPRZDC8d17eAcKC1QI6V89qK1z2qGZkCN0bz42MwhOAdqCIQUjtL+YmQRyGerWMaSvKh6cA5kEcjHkBjtWMqfS3AO5BBo47dbio/Sx1K+oRmRQ6C/xd7I+Oot/xWOcwrOgdQCLV2aDh/4b+cl/YjtqcKxpWsEnGYaRo51tc/YTOruyHYQztEK15l8XiyVQE6AJnJ8Gzn2HrBxGPBa4bl/SgVwLgP08TRy7KvfvxrZ78S/pwmgIiF9pVjl6mLON8L4ye3UKpAvdJhTP8Un+pcZp9CR/KJOvP+5LAN2Ga/4OuxrEqgKuk46ASqQgAokoAIJqEACKpCACiSACiS9ALtGoHtCBTp32e6cQZYU4/jB5q38qLcjRVEURVEURbmEP5dseRQbPGl1AAAAAElFTkSuQmCC" alt="Bitkeep's official Medium account"></a></li>
+                <li><a href="https://github.com/bitkeepwallet/download" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARNSURBVHgB7ZyNVdswEMf/dIGyAdqgdIKaCYAJCBNAJyAbQCcAJgAmsDsBYQK7E0AnuJ4q5UFN9HGynCjUv/fu5T0sRcr5dHc+yQATExMTExPbyg7WDBHt8kfFss+yZz/131SvaWflheWJpWFZ7OzsvOCjoZXCcsFS03BqlnMWhW2Hf0RFeZTiU1aFbWMNiunTshyhdHiSas2K6XNNpS49ntgZyzNtnpZlhlIg44AvqTwukYFBYZ5MyG5YvqBMFizHnBp0SCRZQWTWeo33+UtpdCwHqUpKUtAWKWdJx/I1Jcn8hDTusT3K0SiW2roEEWIFWedXqs/xoR9pLiBEtMTIhM/rQLMfMM5RT+gQ41uaXja3dkxtIaHo9Z2X2hVyQyYJbAOh9XlFP51V31B+alrxmEHhRFXnagqRRFuQ/pH8cRJo9sB358jRX+G9Y+9g7ry2gl+9Ltoa9mz7/V6fUx6ncYyjreMMfhruf4Bc8KBHFMc88ru0VYkcpu0zC/WzbWKokAsKL60l59gwVpEx1DHfF4xiVtMKH48qxopiwrwkNCpsnn1B2+Bv8yqIjGOtEE8J+ZFEQUFfGLIgaRFKYfNIs+V0v0my4pcovxgLMuWXVjDvKGftGkjCHIVA8ZFsifgZTTpIi8IgmfU7XYnPB1WIp0F5PAjaOh37p5ROK7hFedwL2u65LvgU9BnxLFAYtoIYWyBLsiCF+MmUuh0cOy+nk86ioILpItsp14XUkuu2IA/fPSYFBciiICr3pIXCQHwK6hCPJCVYC3zTJHPqXBd8CpJEpuIUBNmcOtcFn4KeEM83lEclaPvbdcGnIEnyVwlNelSsTzwUdHH+1lw+SBPaSVgnWjmSCNZACsnLHZoKG4bi9u/6pKUDJD8t1iYPlgkef0EyvAWzUB70EzIUzCEBhTVDxuL1tri0Lp5eiaC0Zba0pAprgsfaT7CcJQpDIPcye7TXWs/g1zRidLOKGbLvL6kZOSfhKr2qN21mAUXpa1eUsOXcm8uu/Y4LynOatkIOHJNp6Y11kCx6PJPAssgo5pHykq+OTv4C/klku7eEzhitmsOc8lIhJ+Q26X/2w8gspRBKOPzSinKdwxbfoJgJKs8E615bn5IekQj3vafhtDRWGkLmLRsXVa+tdtz1m+tauXc0wLQpzjpDzDAmnkmmbeHKxh7qh/KfTVwxSV9EOcGIDFRQ0taUuORqt3iOsfppXydtGz9ltoIO8pMqfxnrVYQOZuu3wWtlctdK5zqAGTHmHPKzzh0GvIowCDKRTZrAzZFIwhJb0MCINWhXQ98Vlq8wh8dLQ8+pGmo5WbZ9eBLa75xCXoUcA72k9Wn68xxb4tk2DnkyN/yhD2eH6itjFtQamLd6soXzrDurdsnN4I5yGsmpkVgaGEe8GWecCpmH17ue40xOA+h9Jl/TyIW5tfznBXo9TqyX180Q30DmUWHw90xMTExMTEz89/wBkum6HLElkzUAAAAASUVORK5CYII=" alt="Bitkeep's official GitHub account"></a></li>
+                <li><a href="https://instagram.com/bitkeep_global?igshid=YmMyMTA2M2Y=" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOTSURBVHgB7ZuLcdswDIbhXgdwJ6g2SDpB1A2yQbxB0wnsTNARnE5gZwK6E9idQMoE9gZ/iUo+OzrTAh+SKB+/O1wcHQlSkPgACBElEolEIpFIJBIXmFBAAEz1n/ta7rRktRyZ1uLDoZbz36WWdy2byWSyodjQhsm1LLXsMTzch6WWnIZGdyLTohAvKy0ZDYFu+AlxvDFtcB+fqU90g3OMjzn1gW7oB8bLE1litYqhGs9b8l+JhoJXvG96pSulFT6RHb9ovMZhuO9LmwriNwjVsqnoNvgu3S99JjkzipNSyxtVw+dBSy6ow3PRhkKCOJd03udMG/1cCOrtm/V8jZMjTjJDf5Wgbi65d+kknVN87K6sRn+onXtBGfEclFF38Nyxo5PDyfDrz87uPZlXTd8hckehQDf+lpK85qiG9yuEw0Rfm2op2ptHuBVZK9siHAoOnjYqx7ho6OL/H+mjcRRkFBQKyJ6IhAV5gsurVAH7hxidgRYUCMiW8jaCGsh3D7QQtsPDSDT5wt9IewoF/ChadPMkrPDxIfBv3gTOWuoqeECRGCgz6JRGI1dXdHhtYCkCAy3JbJzCQg+XzQy6FByhUMCd3KBvBXuUQZfzW0ShgBt7g64Z3MkNOp0WERJgGzCzYWe4/kjuzC3b8qZLA/01XH8gd0wO5jt1RJcGOjQvoNrj+DiZ7EpkF66X1BFdGugSIYJUB+qRLg30tXmhjt/43OBB67hUv7ODhC4NlBmu+0yopkBYuNhOgy4NZJpQX8idNdm11Q9wJzfoU7BnZdA12o0iY9r9hnQ1XuEIhQJ+5GQ20lpQX+G6w+sMRWIg1aKbXQ/2zZrhDoWW0Cw8A3kU0EC+ATNR6gmqmHImLDuHH0EDZgX8CZafgzD5SVEG7b2NhHDJW1Ea6H/H4JA3iFNoNhRbSbvSjWJJ4ci0FBBmoh4NQ1XqTWt5C0Quj/TouYtwwoxF3/zx6JnDI8dOsx+X0fWjZ19KSSGpgfgGrPP7hLABcuo/QUL00KVDrLOI3YBsJIVEKXioAl086485P/EcDpt8kRQUvUF1DOaNboe1tKBNuOOVboff0oJiA9VZoRsaP2ubL4JSInkLVhHFWvFPGi8vNsZxBmHyc/pmQX2iG3zGeD6HmtEQQB4VHAqFoT6oOwenTNSb+yQz6Ee9TN0xlqPDeX7c7Hv0zJx/1MuUtbCzyy7RznC4mEgkEolEIpFIhOMfhDUuqS9YwqYAAAAASUVORK5CYII=" alt="Bitkeep's official instagram account"></a></li>
+                <li><a href="https://www.facebook.com/BitKeep" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGmSURBVHgB7drhTYNAGMbxB+N36wZsoBuok6gTqBOIE6gb6AS6gd1A3YANygbne0n9YqTPW3qU4/L8kgtJJQj/YMmdACIiIiIiuwgh3NtYhfmL1/CIlOIBQ3kaz7VXnp3sYCvbLFCWrqqqY7aTN1BAgSwQvf4DyEYKRCgQoUDEIeZnaePbxpeN9s/PFutR2zizcY59CHl4s3G6xTk37ICe48zhDups3NkT+QUTmEOga4vzjonk/iX9MGWcKOdArcVpMLGcAy2RgZy/g169O9oDqf7n4yST62wnq56JpJ3WjW0aDIzh+R253kEt28HiXNnmCSOb81TjEnuguRihQIQCEQpEKBChQCmEcXxgRHb8T3YCnuOUfAfVSKDIQHZz/C697qzUO8i9NMuUGijZv8lLDVQjEQUiSg10gkSmXjBr+z63tawLbGCnFBfz+0K4nmJzWDCrMdwREv4p9dFUg1AgQoEIBSIUiFAgQoEIBSIUiFAgQoEIBSIUiFAgQoEIBSK8gTqUx3VN3kDPKI/rJVFXoPX7yjFSCXdSvIb4gvotRERERESG+gGezgdXQftKmQAAAABJRU5ErkJggg==" alt="Bitkeep's official facebook account"></a></li>
+                <li>
+                    <span class="j_prompt" prompt="<div class='WeChatPrompt'><div><img src='https://cdn.bitkeep.vip/u_b_4ce90780-152b-11ec-b6c3-f19f275197e8.png' /></div><p>Advisory QQ</p></div>">
+                        <img src="https://cdn.bitkeep.vip/u_b_ff7b1970-152a-11ec-b6c3-f19f275197e8.png" alt="Bitkeep's official Weixin account">
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "BitKeep",
+        "url": "https://bitkeep.io/",
+        "description": "BitKeep is the world's largest multi-chain wallet. Manage thousands of digital currencies, including Bitcoin, Ethereum, EOS completely decentralized. No registration is require!",
+        "sameAs": ["https://twitter.com/BitKeepOS", "https://t.me/bitkeep"],
+        "image": "https://cdn.bitkeep.vip/u_b_ef198700-ded5-11eb-8c08-ff617688b8f3.png",
+        "logo": "https://bitkeep.io./images/logo.svg"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "BitKeep",
+        "url": "https://bitkeep.com/",
+        "description": "BitKeep is the world's largest multi-chain wallet. Manage thousands of digital currencies, including Bitcoin, Ethereum, EOS completely decentralized. No registration is require!",
+        "sameAs": ["https://twitter.com/BitKeepOS", "https://t.me/bitkeep"],
+        "image": "https://cdn.bitkeep.vip/u_b_ef198700-ded5-11eb-8c08-ff617688b8f3.png",
+        "logo": "https://bitkeep.io./images/logo.svg"
+    }
+</script>
+      
+    </div>
+  <script type="text/javascript" src="/js/index.bundle.js"></script></body>
+</html>
