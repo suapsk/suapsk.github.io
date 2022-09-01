@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/4074b6dd70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Groovy Music</title>
+      <meta data-n-head="ssr" data-hid="robots" name="robots" content="index, follow">
+      <meta data-n-head="ssr" data-hid="application-name" name="application-name" content="Groovy">
+      <meta data-n-head="ssr" data-hid="charset" charset="utf-8">
+      <meta data-n-head="ssr" data-hid="viewport" name="viewport" content="width=device-width,initial-scale=1">
+      <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+      <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="GroovyMusic">
+      <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#78a4fa">
+      <meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website">
+      <meta data-n-head="ssr" data-hid="og:image" name="og:image" property="og:image" content="https://groovy.bot/_nuxt/icons/icon_512x512.321737.png">
+      <meta data-n-head="ssr" data-hid="og:image:width" name="og:image:width" property="og:image:width" content="512">
+      <meta data-n-head="ssr" data-hid="og:image:height" name="og:image:height" property="og:image:height" content="512">
+      <meta data-n-head="ssr" data-hid="og:image:type" name="og:image:type" property="og:image:type" content="image/png">
+      <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="Groovy Music">
+      <meta data-n-head="ssr" data-hid="og:site_name" property="og:site_name" content="Groovy">
+      <link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="https://groovy.bot/_nuxt/icons/icon_64x64.321737.png">
+      <link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="https://groovy.bot/_nuxt/icons/icon_512x512.321737.png" sizes="512x512">
+    <style type="text/css">
+      .img-cover {
+        width: 80% !important;
+        border-radius: .7rem !important;
+        box-shadow: inset 1em 1em 1em #000 !important;
+      }
+      #library-link {
+        color: #eee !important;
+      }
+      h2 {
+        color: #bbc !important;
+      }
+      #btn-loop:hover {
+        scale: 160% !important;
+        background: rgba(238, 238, 238, 0.1);
+        border-radius: .2em;
+        transition-duration: .1s;
+      }
+      #btn-cfg:hover {
+        scale: 120% !important;
+        background: rgba(238, 238, 238, 0.1);
+        border-radius: .2em;
+        transition-duration: .1s;
+      }
+      #play-pause:hover {
+        scale: 110% !important;
+        transition-duration: .1s;
+      }
+      #play-pause:active {
+        scale: 120% !important;
+        transition-duration: .1s;
+      }
+      .nav-ctl {
+          background: transparent;
+          width: 100%;
+          height: 8em;
+          display: none;
+        }
+        .nav-ctl-bar {
+          background: #333;
+          width: 90%;
+          height: 3.6em;
+          margin-top: 3.2em;
+          margin-left: 5%;
+          border-radius: .6em;
+        }
+        .nav-ctl-item {
+          background: transparent;
+          height: 3em;
+          width: 3em;
+          margin-top: .3em;
+          margin-left: 1.5em;
+          border-radius: .5em;
+        }
+        .nav-ctl-1 {
+          margin-left: 20%;
+        }
+
+        input[type="file"] {
+          display: none;
+        }
+        .file-upload {
+          display: block;
+          width: 50%;
+          height: 2em;
+          margin: 1.5em 0 0 25%;
+          text-align: center;
+          padding-top: .5em;
+          background: #303030;
+          color: #eee;
+          font-size: 1.3em;
+          font-family: Comfortaa;
+          font-weight: 900;
+          border-radius: .3em;
+          opacity: 80%;
+        }
+        .file-upload:active {
+          background: #404040;
+          scale: 107%;
+          transform: .1s;
+        }
+    </style>
+    <script type="text/javascript" src="./assets/lib.js"></script>
+</head>
+<body>
+<data style="display: none;" hidden>
+  <data id="data-sid" updater="false" value="0"></data>
+  <data id="data-loop" updater="false" value="true"></data>
+  <data id="data-res" updater="false"></data>
+</data>
+<script type="text/javascript">
+  var data_sid = document.getElementById("data-sid");
+  var data_loop = document.getElementById("data-loop");
+  var data_res = document.getElementById("data-res");
+  var res = false;
+  function sid_update(arg) {
+    data_sid.value = arg;
+    data_sid.updater = "true";
+  }
+  function loop_update() {
+    data_loop.updater = "true";
+  }
+  function res_emp() {
+    data_res.updater = "true";
+  }
+</script>
+    <div class="app">
+      <nav>
+        <span id="connect-link" onclick="res_emp()" style="font-family: comfortaa;">Groovy Music</span>
+        <span id="library-link" style="font-family: comfortaa;">Library</span>
+      </nav>
+      <div class="song-info">
+        <img class="img-cover" id="img-cover" src="./assets/groovy-music.jpg" alt=""/>
+        <div>
+          <h2 id="song-name">Groovy Music</h2>
+          <h3 id="artist"></h3>
+        </div>
+      </div>
+      <div class="player">
+        <div>
+          <input type="range" />
+          <div></div>
+        </div>
+        <span id="timeline-start">start</span>
+        <span id="timeline-end">end</span>
+      </div>
+      <div class="player-control">
+        <i class="fas fa-backward" id="backward" style="display: none;"></i>
+        <svg id="btn-cfg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(173, 202, 242, 1);transform: ;msFilter:; scale: 110%; margin-top: .3em; margin-right: .5em;"><path d="m2.344 15.271 2 3.46a1 1 0 0 0 1.366.365l1.396-.806c.58.457 1.221.832 1.895 1.112V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.598a8.094 8.094 0 0 0 1.895-1.112l1.396.806c.477.275 1.091.11 1.366-.365l2-3.46a1.004 1.004 0 0 0-.365-1.366l-1.372-.793a7.683 7.683 0 0 0-.002-2.224l1.372-.793c.476-.275.641-.89.365-1.366l-2-3.46a1 1 0 0 0-1.366-.365l-1.396.806A8.034 8.034 0 0 0 15 4.598V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.598A8.094 8.094 0 0 0 7.105 5.71L5.71 4.904a.999.999 0 0 0-1.366.365l-2 3.46a1.004 1.004 0 0 0 .365 1.366l1.372.793a7.683 7.683 0 0 0 0 2.224l-1.372.793c-.476.275-.641.89-.365 1.366zM12 8c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"></path></svg>
+        <i class="fas fa-play" id="play-pause"></i>
+        <svg id="btn-loop" onclick="loop_update()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(173, 202, 242, 1);transform: ;msFilter:; scale: 150%; margin-top: .3em; margin-left: .5em;"><path d="m13 7.101.01.001a4.978 4.978 0 0 1 2.526 1.362 5.005 5.005 0 0 1 1.363 2.528 5.061 5.061 0 0 1-.001 2.016 4.976 4.976 0 0 1-1.363 2.527l1.414 1.414a7.014 7.014 0 0 0 1.908-3.54 6.98 6.98 0 0 0 0-2.819 6.957 6.957 0 0 0-1.907-3.539 6.97 6.97 0 0 0-2.223-1.5 6.921 6.921 0 0 0-1.315-.408c-.137-.028-.275-.043-.412-.063V2L9 6l4 4V7.101zm-7.45 7.623c.174.412.392.812.646 1.19.249.37.537.718.854 1.034a7.036 7.036 0 0 0 2.224 1.501c.425.18.868.317 1.315.408.167.034.338.056.508.078v2.944l4-4-4-4v3.03c-.035-.006-.072-.003-.107-.011a4.978 4.978 0 0 1-2.526-1.362 4.994 4.994 0 0 1 .001-7.071L7.051 7.05a7.01 7.01 0 0 0-1.5 2.224A6.974 6.974 0 0 0 5 12a6.997 6.997 0 0 0 .55 2.724z"></path></svg>
+        <i class="fas fa-forward" id="forward" style="display: none;"></i>
+      </div>
+      <div class="nav-ctl">
+          <div class="nav-ctl-bar">
+            <img src="./assets/bxicon/bx-spotify.svg" class="nav-ctl-item nav-ctl-1">
+            <img src="./assets/bxicon/bx-library.svg" class="nav-ctl-item">
+            <img src="./assets/bxicon/bx-folder.svg" id="library-link" class="nav-ctl-item">
+          </div>
+      </div>
+      <div class="sound-control">
+        <!--<i class="fas fa-volume-down"></i>-->
+        <input type="range" max="100" step="1" hidden />
+        <!--<i class="fas fa-volume-up"></i>-->
+      </div>
+      <audio title="Groovy Music" id="audio" src="" loop></audio>
+    </div>
+
+    <div class="library">
+      <h2>Library</h2>
+      <div onclick="res_emp()" class="library-song selected" id="0">
+        <img id="img-0" src="./assets/groovy-music.jpg" alt=""/>
+        <div class="library-song-info">
+          <h3>Groovy Music</h3>
+          <h4>Groovy</h4>
+        </div>
+      </div>
+
+    <label class="file-upload">
+      <input id="fileaddr" type="file">
+      File
+    </label>
+      
+      </div>
+    <!--
+      <div class="add-song">Add Song <i class="far fa-plus-square"></i></div>
+    -->
+    </div>
+    <script src="./assets/scripts/app.js"></script>
+    <script type="text/javascript">
+      const msrc = document.getElementById("audio");
+      const img_cover = document.getElementById("img-cover");
+      const song_name = document.getElementById("song-name");
+      const artist_name = document.getElementById("artist")
+      const play_pause = document.getElementById("play-pause");
+      const timeline_start = document.getElementById("timeline-start");
+      const timeline_end = document.getElementById("timeline-end");
+      const fileaddr = document.getElementById('fileaddr');
+
+      fileaddr.onchange = function() {
+        var filepath = fileaddr.value;
+        filepath = filepath.replace('fakepath', '');
+        msrc.src = filepath;
+      };
+
+      function lib_update() {
+        // ...
+      }
+      function async() {
+        if (data_loop.updater == "true") {
+          data_loop.updater = "false";
+          if (data_loop.value == "true") {
+          msrc.loop = false;
+          data_loop.value = "false";
+          } else {
+            msrc.loop = true;
+            data_loop.value = "true";
+          }
+        }
+        if (data_res.updater == "true") {
+          data_res.updater = "false";
+          song_name.innerHTML = "Groovy Music";
+          img_cover.src = "./assets/groovy-music.jpg";
+          msrc.src = "";
+          artist_name.innerHTML = "";
+        }
+        if (play_pause.className == "fas fa-pause") {
+        // Code
+        }
+      }
+      setInterval(lib_update, 300);
+      setInterval(async, 300);
+    </script>
+  </body>
+</html>
